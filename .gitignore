@@ -1,0 +1,5 @@
+.idx/
+.vscode/
+
+.idx/dev.nix
+.vscode/settings.json
