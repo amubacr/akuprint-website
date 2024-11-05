@@ -232,7 +232,7 @@ main {
 }
 
 main .main-container {
-    height: 100vh;
+    height: 91vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -409,3 +409,95 @@ main .main-right .main-illustration img {
     text-align: center;
     width: 55%;
 }
+
+.popular-products {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-products .popular-products-list {
+    /* width: 100%; */
+    overflow-x: scroll;
+}
+
+.popular-products .popular-products-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: var(--font-family-heading);
+    font-size: calc(var(--font-header-size-1) - 1rem);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.popular-products .popular-products-title span svg {
+    width: 35px;
+    margin-top: .3rem;
+}
+
+.popular-products .popular-products-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 100%;
+}
+
+.popular-products .popular-products-list .product-card {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    cursor: pointer;
+    border: 1px solid var(--accent-color-2);
+    border-radius: 3px;
+    gap: .5rem;
+    transition: all .2s;
+}
+
+.popular-products .popular-products-list .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px rgba(0, 0, 0, .8);
+}
+
+.popular-products .popular-products-list .product-card:active {
+    transform: translateY(-1.5px);
+    box-shadow: 0px 1.5px rgba(0, 0, 0, .8);
+}
+
+.popular-products .popular-products-list .product-card .product-image {
+    width: 100%;
+    height: 389px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.popular-products .popular-products-list .product-card .product-information {
+    text-decoration: none;
+    color: var(--accent-color-2);
+}
+
+.popular-products .popular-products-list .product-card .product-information .product-title {
+    font-family: var(--font-family-heading);
+    font-size: calc(var(--font-header-size-6) - .4rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.popular-products .popular-products-list .product-card .product-information .product-price {
+    font-family: var(--font-family-heading);
+    font-size: calc(var(--font-header-size-3) - .35rem);
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.popular-products .popular-products-list .card-2 .product-image {
+    background-image: url('https://1drv.ms/i/c/3b2553accfaddb7c/IQSN5mCvYhanQpwBNrjQcV0PAbOq4bucSu3krC6SVl5mdD8?height=660');
+}
+
+.popular-products .popular-products-list .card-3 .product-image {
+    background-image: url('https://1drv.ms/i/c/3b2553accfaddb7c/IQTLSophSCpkQ7Ny1zi6xAKFAfcSp2JH1p01kop0Y2NUxNw?height=660');
+}
+
